@@ -1,0 +1,58 @@
+@import url("reset.css");
+
+h1, h2 {
+    color: #0c5016;
+}
+h2 + p {
+    color: #6f3806;
+}
+
+li > a {
+    color: #7539c8;
+}
+
+p {
+    color: #0f1915;
+}
+p.source-text {
+    color: #25cff0;
+}
+
+a {
+    color: #2e00b7;
+}
+a.section-link {
+    color: #ef4730;
+}
+
+[title*="Цитування"] {
+    color: #0496d4;
+}
+[title*="Про"] {
+    color: #d40404;
+}
+
+.section02 h2 {
+    color: #3cb305;
+}
+.section03 .text {
+    color: #935610;
+}
+
+.sub-title.title {
+    color: #9b2eda;
+}
+.footer-section > p {
+    color: #770303;
+}
+
+.footer-section ~ a {
+    color: #fcb00d;
+}
+
+#prolog p{
+    color: #576a8c;
+}
+#in-profile {
+    color: #024ea5;
+}

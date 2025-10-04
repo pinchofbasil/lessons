@@ -1,0 +1,72 @@
+@import url("reset.css");
+/* @import url("fonts.css"); */
+
+@import url("fonts.css");
+
+body {
+    font-family: 'Lato', sans-serif;
+    line-height: 1.25;
+    color: rgba(47, 48, 44, 1);
+    background-color: rgba(255, 255, 255, 1);
+}
+
+.hero-title {
+	font-size: 38px;
+	font-weight: 800;
+	text-align: center;
+}
+
+.container {
+	max-width: 1392px;
+	margin: 82px auto 0;
+}
+ 
+	
+.section {
+	max-width: 1180px;
+	margin: 0 auto;
+	text-align: center;
+}
+.cards {
+	font-size: 0;
+	margin-left: -34px;
+	margin-right: -34px;
+	margin-top: 68px;
+}
+.card {
+	padding-left: 34px;
+	padding-right: 34px;
+	display: inline-block;
+	width: 33.333%;
+	vertical-align: top;
+}
+.card-content {
+	font-size: 16px; /* додав розмір шрифту так як в .card його прийшлось обнулити */
+	
+}
+
+.card-img {
+	margin-bottom: 24px;
+}
+
+.title, .card-title {
+	text-transform: uppercase;
+}
+
+.title {
+	font-size: 32px;
+	font-weight: 800;
+	margin-bottom: 72px; /* КОСТИЛЬ із схлопуванням margin у .cards, але без first/last-chaild не придумав як зробити так щоб нижній рядока карточок був без відступів згідно макета */
+}
+
+.card-title {
+	font-weight: 700;
+	margin-bottom: 24px;
+}
+
+.card-text {
+	color: rgba(126, 127, 124, 1);
+}
+
+
+

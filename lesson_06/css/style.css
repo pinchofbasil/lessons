@@ -16,7 +16,7 @@ body {
     padding-top: 114px;
     padding-bottom: 110px;
     color: rgba(47, 48, 44, 1);
-    background-image: url(/img/bg-img.webp);
+    background-image: url(../img/bg-img.webp);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -191,11 +191,11 @@ body {
 }
 
 .checked {
-    background: url(/img/check-badge.webp) no-repeat left center;
+    background: url(../img/check-badge.webp) no-repeat left center;
 }
 
 .unchecked {
-    background: url(/img/uncheck-badge.webp) no-repeat left center;
+    background: url(../img/uncheck-badge.webp) no-repeat left center;
 }
 
 .btn {

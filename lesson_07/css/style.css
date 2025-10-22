@@ -1,0 +1,399 @@
+@import url("reset.css");
+
+@import url("fonts.css");
+
+body {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 1.5;
+  background-color: rgba(227, 222, 222, 0.9);
+}
+body a:focus-visible {
+  outline: 5px solid rgb(6, 102, 45);
+}
+
+
+.container {   
+  max-width: 1240px;
+  margin: 0 auto;
+}
+
+.wrapper > * {
+  margin-bottom: 10px;
+}
+
+.title {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 800;
+  font-size: 36px;
+  line-height: 1.5;
+  text-align: center;
+}
+
+.hover-example {
+  max-width: 400px;
+  text-transform: uppercase;
+  border: 1px solid rgb(14, 13, 13);
+  border-radius: 20px;
+  padding: 10px;
+  text-align: center;
+}
+
+.hover-example:hover {
+  letter-spacing: 2px;
+  color: rgba(227, 222, 222, 0.9);
+  background-color: rgb(165, 42, 42);
+  border: 1px solid rgb(165, 42, 42);
+}
+
+.active-example {
+  max-width: 400px;
+  text-transform: uppercase;
+  border: 1px solid rgb(14, 13, 13);
+  border-radius: 20px;
+  padding: 10px;
+  text-align: center;
+}
+
+.active-example:active {
+  color: rgba(227, 222, 222, 0.9);
+  background-color: rgb(165, 42, 42);
+  border: 1px solid rgb(165, 42, 42);
+}
+
+.visited-example {
+  max-width: 400px;
+  text-transform: uppercase;
+  border: 1px solid rgb(14, 13, 13);
+  border-radius: 20px;
+  padding: 10px;
+  text-align: center;
+}
+
+.visited-example a:visited {
+  color: rgb(136, 43, 43);
+  border-color: rgb(136, 43, 43);
+}
+
+.focus-example {
+  max-width: 400px;
+  text-transform: uppercase;
+  border: 1px solid rgb(14, 13, 13);
+  border-radius: 20px;
+  padding: 10px;
+  text-align: center;
+}
+
+.focus-example a:focus {
+  outline: 5px solid rgb(136, 43, 43);
+}
+
+.target-example {
+  max-width: 400px;
+  text-transform: uppercase;
+  border: 1px solid rgb(14, 13, 13);
+  border-radius: 20px;
+  padding: 10px;
+  text-align: center;
+}
+
+#boo {
+  display: none;
+}
+
+#boo:target {
+  display: block;
+}
+
+.text-first :first-child {
+  color: rgb(213, 72, 72);
+}
+
+.text-first p:first-of-type {
+  color: rgb(26, 26, 204);
+}
+
+.text-last :last-child {
+  color: rgb(213, 72, 72);
+}
+
+.text-last p:last-of-type {
+  color: rgb(26, 26, 204);
+}
+
+.text-nth :nth-child(2) {
+  color: rgb(213, 72, 72);
+}
+
+.text-nth p:nth-of-type(2) {
+  color: rgb(26, 26, 204);
+}
+
+.text-odd-even :nth-child(odd) {
+  color: rgb(213, 72, 72);
+}
+
+.text-odd-even :nth-child(even) {
+  color: rgb(26, 26, 204);
+}
+
+.text-odd-even :nth-child(4n) {
+  color: rgb(8, 150, 48);
+}
+
+.text-odd-even :nth-child(2n + 5) {
+  color: rgb(220, 11, 199);
+}
+
+.card-desc {
+  max-width: 351px;
+  margin-inline: auto;
+  padding: 16px 40px;
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 1.7;
+  letter-spacing: 0.2px;
+  color: rgba(37, 43, 66, 1);
+  background-color: rgba(255, 255, 255, 1);
+}
+
+.card-list {
+  padding-left: 15px;
+}
+
+.card-list > *:not(:last-child) {
+  margin-bottom: 15px;
+}
+
+.active-item::before {
+  display: inline-block;
+	content: "";
+	width: 32px;
+	height: 32px;
+	background: url("../img/check-badge.svg");
+  background-repeat: no-repeat;
+  vertical-align: middle;
+	margin-right: 10px;
+	margin-left: -42px;
+}
+
+.unactive-item::before {
+  display: inline-block;
+	content: "";
+	width: 32px;
+	height: 32px;
+	background: url("../img/uncheck-badge.svg");
+  background-repeat: no-repeat;
+  vertical-align: middle;
+	margin-right: 10px;
+	margin-left: -42px;
+}
+
+.game {
+  display: inline-block;
+  width: 100%;
+  height: 1080px;
+  background: url('../img/map.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.button {
+  max-width: 80px;
+  text-transform: uppercase;
+  border-radius: 20px;
+  padding: 5px;
+  text-align: center;
+  color: rgba(227, 222, 222, 0.9);
+  background-color: rgb(165, 42, 42);
+  box-shadow: 0 8px 0 0 #000;
+  margin-top: 785px;
+  margin-left: 130px;
+}
+
+.button:hover {
+  margin-top: 790px;
+  box-shadow: 0 3px 0 0 #000;;
+}
+
+.missile-1 {
+  margin-top: -95px;
+  margin-left: 160px;
+  width: 20px;
+  height: 80px;
+  background: url("../img/up.png");
+  background-repeat: no-repeat;
+  background-size: 100%;
+}
+
+.missile-2 {
+  margin-top: -165px;
+  margin-left: 153px;
+  width: 35px;
+  height: 120px;
+  background: url("../img/up.png");
+  background-repeat: no-repeat;
+  background-size: 100%;
+}
+
+.missile-3 {
+  margin-top: -215px;
+  margin-left: 149px;
+  width: 45px;
+  height: 160px;
+  background: url("../img/up.png");
+  background-repeat: no-repeat;
+  background-size: 100%;
+}
+
+.missile-4 {
+  margin-top: -265px;
+  margin-left: 145px;
+  width: 55px;
+  height: 195px;
+  background: url("../img/up.png");
+  background-repeat: no-repeat;
+  background-size: 100%;
+}
+
+.missile-5 {
+  margin-top: -230px;
+  margin-left: 160px;
+  width: 220px;
+  height: 55px;
+  background: url("../img/rigtht.png");
+  background-repeat: no-repeat;
+  background-size: 100%;
+}
+
+.missile-6 {
+  margin-top: -55px;
+  margin-left: 265px;
+  width: 220px;
+  height: 55px;
+  background: url("../img/rigtht.png");
+  background-repeat: no-repeat;
+  background-size: 100%;
+}
+
+.missile-7 {
+  margin-top: -55px;
+  margin-left: 370px;
+  width: 220px;
+  height: 55px;
+  background: url("../img/rigtht.png");
+  background-repeat: no-repeat;
+  background-size: 100%;
+}
+
+.missile-8 {
+  margin-top: -55px;
+  margin-left: 480px;
+  width: 220px;
+  height: 55px;
+  background: url("../img/rigtht.png");
+  background-repeat: no-repeat;
+  background-size: 100%;
+}
+
+.missile-9 {
+  margin-top: -185px;
+  margin-left: 685px;
+  width: 45px;
+  height: 160px;
+  background: url("../img/up.png");
+  background-repeat: no-repeat;
+  background-size: 100%;
+}
+
+.missile-10 {
+  margin-top: -210px;
+  margin-left: 689px;
+  width: 37px;
+  height: 135px;
+  background: url("../img/up.png");
+  background-repeat: no-repeat;
+  background-size: 100%;
+}
+
+.missile-11 {
+  margin-top: -185px;
+  margin-left: 694px;
+  width: 30px;
+  height: 115px;
+  background: url("../img/up.png");
+  background-repeat: no-repeat;
+  background-size: 100%;
+}
+
+.missile-12 {
+  margin-top: -133px;
+  margin-left: 701px;
+  width: 115px;
+  height: 30px;
+  background: url("../img/rigtht.png");
+  background-repeat: no-repeat;
+  background-size: 100%;
+}
+
+.missile-13 {
+  margin-top: -28px;
+  margin-left: 757px;
+  width: 115px;
+  height: 30px;
+  background: url("../img/rigtht.png");
+  background-repeat: no-repeat;
+  background-size: 100%;
+}
+
+.missile-14 {
+  margin-top: -28px;
+  margin-left: 815px;
+  width: 100px;
+  height: 30px;
+  background: url("../img/rigtht.png");
+  background-repeat: no-repeat;
+  background-size: 100%;
+}
+
+.missile-15 {
+  margin-top: -30px;
+  margin-left: 860px;
+  width: 100px;
+  height: 30px;
+  background: url("../img/rigtht.png");
+  background-repeat: no-repeat;
+  background-size: 100%;
+}
+
+.missile-finish {
+  margin-top: -135px;
+  margin-left: 920px;
+  width: 185px;
+  height: 175px;
+  background: url("../img/fire.png");
+  background-repeat: no-repeat;
+  background-size: 100%;
+}
+
+[class*="missile-"] {
+  visibility: hidden;
+}
+
+.game > *:hover + *, .game > *:hover {
+  visibility: visible;
+}
+
+.up {
+  display: block;
+  text-transform: uppercase;
+  padding: 10px;
+  text-align: center;
+}
+
+.up:hover {
+  letter-spacing: 2px;
+  color: rgba(227, 222, 222, 0.9);
+  background-color: rgb(165, 42, 42);
+}

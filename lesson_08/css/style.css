@@ -1,0 +1,51 @@
+@import url("reset.css");
+
+@import url("fonts.css");
+
+body {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 1.5;
+  background-color: rgba(253, 239, 230, 0.99);
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.container div {
+  padding: 20px;
+}
+
+h1 {
+  font-size: 36px;
+  text-align: center;
+}
+
+span {
+  display: inline-block;
+  margin: 15px;
+  text-align: center;
+}
+
+.flower {
+  background-image: url('../img/flower.webp');
+  background-repeat: no-repeat;
+  min-height: 550px;
+}
+
+.up {
+  display: block;
+  text-transform: uppercase;
+  padding: 10px;
+  text-align: center;
+}
+
+.up:hover {
+  border-radius: 33px;
+  letter-spacing: 2px;
+  color: rgba(255, 255, 255, 1);
+  background-color: rgba(186, 147, 111, 1);
+}

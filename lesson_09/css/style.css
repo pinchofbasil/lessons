@@ -1,0 +1,17 @@
+@import url("reset.css");
+/* @import url("fonts.css"); */
+
+@import url("fonts.css");
+
+body {
+  font-family: "Montserrat", sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+  font-weight: 400;
+  background-color: rgba(255,255,255,1);
+}
+
+h1, h2, h3 {
+  font-weight: 700;
+  font-size: 24px;
+}

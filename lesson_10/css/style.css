@@ -1,0 +1,281 @@
+@import url("reset.css");
+/* @import url("fonts.css"); */
+
+@import url("fonts.css");
+
+body {
+  font-family: "Montserrat", sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+  font-weight: 400;
+  background-color: rgba(255,255,255,1);
+}
+
+
+.wrapper {
+  position: relative;
+  min-height: 100%;
+  overflow: clip;
+}
+
+[class*="__container"] {
+  max-width: 1030px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+/* Header */
+
+.header {
+  position: sticky;
+  top: 0;
+  left: 0;
+  width: 100%;
+  color: rgb(47, 48, 44);
+  background-color: rgba(243, 240, 238);
+  box-shadow: 0 2px 20px rgba(37, 43, 66, 0.6);
+  z-index: 100;
+}
+
+.header__wrapper {
+  font-size: 0;
+}
+.header__menu {
+  display: inline-block;
+  vertical-align: middle;
+  font-size: 16px;
+  text-transform: uppercase;
+  text-align: center;
+}
+.menu__item {
+  display: inline-block;
+  position: relative;
+}
+
+.menu__item:hover .menu__submenu {
+  opacity: 1;
+  visibility: visible;
+}
+
+.menu__item:not(:last-child) {
+  margin-right: 5px;
+}
+
+.menu__link {
+  display: block;
+  padding: 10px;
+  text-align: center;
+  border-radius: 5px;
+  transition: all 0.5s;
+}
+
+.menu__link:hover {
+  background-color: #f891d6;
+  color: rgb(255, 255, 255);
+}
+
+.menu__submenu {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  color: rgb(255, 255, 255);
+  background-color: rgba(47, 48, 44);
+  border-radius: 5px;
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.3s;
+}
+
+.submenu__link, 
+.our-team__link {
+  display: block;
+  padding: 10px;
+  text-align: center;
+  border-radius: 5px;
+  transition: all 0.7s;
+}
+
+.submenu__link:hover, .our-team__link:hover {
+  background-color: #f891d6;
+}
+
+.submenu, .our-team {
+  min-width: 140px;
+  padding: 10px;
+}
+
+.submenu__item:hover .submenu__our-team {
+  opacity: 1;
+  visibility: visible;
+}
+
+.submenu__our-team {
+  position: absolute;
+  top: 10%;
+  left: 95%;
+  color: rgb(255, 255, 255);
+  background-color: rgb(47, 48, 44);
+  border-radius: 5px;
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.3s;
+}
+
+/* Faces */
+
+.face {
+  font-family: "Playfair Display", sans-serif;
+  font-weight: 400;
+  line-height: 1.35;
+  color: rgba(0, 0, 0, 1);
+}
+
+.face__container {
+  padding: 0 15px;
+  text-align: center;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.face__top h1 {
+  font-size: 20px;
+  line-height: 1.35;
+  margin: 48px 0;
+}
+
+.face__list {
+  margin: 0 -61.5px;
+  font-size: 0;
+  margin-bottom: 77px;
+}
+
+.face__item {
+  display: inline-block;
+  padding: 0 61.5px;
+  font-size: 16px;
+  position: relative;
+}
+
+.face__link {
+  position: relative;
+  max-width: 251px;
+}
+
+.face__link::after {
+  background: rgba(0, 0, 0, 0.6);
+  content: "";
+  width: 100%;
+  height: 100%;
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.face__link:hover::after {
+  background: rgba(0, 0, 0, 0.2);
+  transition: 0.7s;
+}
+
+.face__img {
+  max-width: 100%;
+}
+
+.face__text {
+  position: absolute;
+  top: 133px;
+  left: 10%;
+  right: 10%;
+  color: rgb(255, 255, 255);
+  z-index: 2;
+}
+
+
+.face__text h2 {
+  font-size: 28px;
+  line-height: 1.32;
+  margin-bottom: 110px;
+  transition: 0.7s;
+}
+
+.face__text:hover h2 {
+  transform: translateY(-128px);
+  transition: 0.7s;
+}
+
+.face__text p {
+  position: relative;
+  font-size: 17px;
+  opacity: 0;
+  bottom: -35px;
+  transition: 0.7s;
+}
+
+.face__text:hover p {
+  opacity: 1;
+  transform: translateY(-30px);
+  transition: 0.8s;
+}
+
+.face__btn {
+  font-size: 14px;
+  padding: 10px 50px;
+  border: 1px solid rgba(0, 0, 0, 1);
+  transition: 0.7s;
+  margin-bottom: 65px;
+}
+
+.face__btn:hover {
+  background-color: rgba(0, 0, 0, 1);
+  color: rgb(255, 255, 255);
+  transition: 0.8s;
+}
+
+/* Card */
+
+.card__container {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.card_list {
+  margin: 0 auto;
+  padding: 20px 40px;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 1.7;
+  max-width: 351px;
+  color: rgba(37, 43, 66, 1);
+}
+
+.card__item:not(:last-child) {
+  margin-bottom: 16px;
+}
+
+.card__item {
+  position: relative;
+  padding-left: 42px;
+  padding-top: 4px;
+}
+
+.card__item::before {
+  content: "";
+  position: absolute;
+  background: url(../img/check-badge.svg) 0 0 / 100% no-repeat;
+  width: 32px;
+  height: 32px;
+  left: 4px;
+  top: 0;
+}
+
+.card__item--unckected::before {
+  background: url(../img/uncheck-badge.svg) 0 0 / 100% no-repeat;
+}
+
+/* Footer */
+
+.footer {
+  text-align: center;
+  color: rgba(0, 0, 0, 0.5);
+}
+.footer__text p {
+  padding: 20px 0;
+}

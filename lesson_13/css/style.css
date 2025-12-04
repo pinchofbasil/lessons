@@ -1,0 +1,154 @@
+@import url("reset.css");
+/* @import url("fonts.css"); */
+
+@import url("fonts.css");
+
+body {
+    font-family: "Lato", sans-serif;
+    font-size: 16px;
+    line-height: 1.25;
+    color: rgba(47, 48, 44, 1);
+    background-color: rgb(255, 255, 255);
+}
+
+[class*="__section"] {
+    padding-block: 82px;
+    text-align: center;
+}
+
+.wrapper {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    min-height: 100%;
+    overflow: clip;
+}
+
+.wrapper > main {
+    flex-grow: 1;
+}
+
+[class*="__container"] {
+	max-width: 1422px;
+	margin: 0 auto;
+	padding: 0 15px;
+}
+
+/* Header */
+
+.title__section {
+    font-size: 36px;
+    font-weight: 800;
+    text-transform: uppercase;
+}
+
+/* Featured-product */
+
+.featured-products__header {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 72px;
+}
+
+.featured-products__title {
+    font-size: 32px;
+    font-weight: 800;
+    text-transform: uppercase;
+}
+
+.featured-products__list {
+    display: flex;
+    gap: 36px;
+    flex-wrap: wrap;
+}
+
+.card-item {
+    display: flex;
+    flex: 0 1 440px;
+}
+
+.card-item__link {
+    display: flex;
+    flex-direction: column;
+    row-gap: 32px;
+    transition: 0.8s;
+}
+
+.card-item__link:hover {
+    transform: scale(105%);
+    transition: transform 0.5s;
+}
+
+.card-item__img {
+    display: block;
+    width: 100%;
+}
+
+.card-item__info {
+    display: flex;
+    flex-direction: column;
+    row-gap: 12px;
+    align-items: center;
+    flex-grow: 1;
+}
+
+.card-item__title {
+    font-weight: 500;
+    text-transform: uppercase;
+    flex-grow: 1;
+}
+
+.card-item__rating {
+    display: flex;
+    column-gap: 4px;
+}
+
+.card-item__price {
+    font-weight: 800;
+    line-height: 1.4;
+    font-size: 20px;
+}
+
+/* Choose Us */
+
+.benefits__container {
+    max-width: 1210px;
+}
+
+.benefits__title {
+    font-size: 32px;
+    font-weight: 800;
+    text-transform: uppercase;
+    margin-bottom: 72px;
+}
+
+.benefits__list {
+    display: flex;
+    gap: 68px;
+    flex-wrap: wrap;
+}
+
+.card-benefits {
+    display: flex;
+    flex-direction: column;
+    flex: 0 1 348px;
+    align-items: center;
+    row-gap: 24px;
+}
+
+
+.card-benefits__icon {
+    width: 60px;
+    height: 60px;
+    object-fit: cover;
+}
+
+.card-benefits__title {
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.card-benefits__text {
+    font-weight: 500;
+    color: rgba(126, 127, 124, 1);
+}
